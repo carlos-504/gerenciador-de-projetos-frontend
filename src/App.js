@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import userIMG from "./assets/images/userLogin.png";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <div className="login-box">
+                <img src={userIMG} alt="IMG_LOGIN" className="img-login" />
+                <h4 className="typography">Bem-Vindo</h4>
+                <form>
+                    <label>Usuário</label>
+                    <input type="text" placeholder="Usuário" />
+                    <label>Senha</label>
+                    <input type="password" placeholder="Senha" />
+                    <button>Salvar</button>
+                </form>
+            </div>
+        </>
+    );
 }
 
 export default App;
