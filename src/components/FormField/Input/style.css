@@ -1,0 +1,15 @@
+.input-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+input {
+    height: 45px;
+    outline: none;
+}
+
+label {
+    padding-top: 20px;
+    padding-bottom: 8px;
+}

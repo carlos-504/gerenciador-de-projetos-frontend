@@ -1,10 +1,11 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import api from "./services/api";
-import { login, setIdUser, setNameUser } from "./services/auth";
-import userIMG from "./assets/images/userLogin.png";
+import Input from "../../components/FormField/Input";
+import api from "../../services/api";
+import { login, setIdUser, setNameUser } from "../../services/auth";
+import userIMG from "../../assets/images/userLogin.png";
 import { useHistory } from "react-router-dom";
-import "./App.css";
+import "./style.css";
 
 function App() {
     const { register, handleSubmit } = useForm();
@@ -29,21 +30,21 @@ function App() {
                 <img src={userIMG} alt="IMG_LOGIN" className="img-login" />
                 <h4 className="typography">Bem-Vindo</h4>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <label>Email</label>
-                    <input
+                    <Input
                         type="text"
+                        label="Email"
                         name="email"
                         placeholder="Email"
-                        ref={register}
+                        register={register}
                     />
-                    <label>Senha</label>
-                    <input
+                    <Input
                         type="password"
+                        label="Senha"
                         name="password"
                         placeholder="Senha"
-                        ref={register}
+                        register={register}
                     />
-                    <button>Salvar</button>
+                    <button>Entrar</button>
                 </form>
             </div>
         </>
