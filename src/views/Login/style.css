@@ -18,11 +18,11 @@
     background-color: #9aff9a77;
 }
 
-form {
+.form-login {
     width: 500px;
     padding: 4rem 2rem;
     border-radius: 1rem;
-    box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+    box-shadow: 0 10px 25px rgba(34, 32, 32, 0.712);
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@ form {
     margin-bottom: 3rem;
 }
 
-button {
+.button-login {
     align-self: stretch;
     margin-top: 20px;
     padding: 10px;
@@ -52,10 +52,10 @@ button {
     background-color: #2e8b57;
 }
 
-button:hover {
+.button-login:hover {
     background-color: #00aa55;
 }
 
-button:active {
+.button-login:active {
     background-color: #2e8b57;
 }

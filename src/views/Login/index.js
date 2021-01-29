@@ -26,7 +26,7 @@ function App() {
 
     return (
         <div className="login-box">
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form className="form-login" onSubmit={handleSubmit(onSubmit)}>
                 <UserSVG className="svgLogin" />
                 <h4 className="typography">Bem-Vindo</h4>
                 <Input
@@ -43,7 +43,7 @@ function App() {
                     placeholder=""
                     register={register}
                 />
-                <button>Entrar</button>
+                <button className="button-login">Entrar</button>
             </form>
         </div>
     );
