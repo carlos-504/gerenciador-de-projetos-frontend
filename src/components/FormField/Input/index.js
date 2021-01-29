@@ -16,7 +16,6 @@ const Input = ({
 }) => {
     return (
         <div className="input-box">
-            <label htmlFor={name}>{label}</label>
             <input
                 type={type}
                 name={name}
@@ -26,6 +25,7 @@ const Input = ({
                 {...otherProps}
             />
             {/* {errors[name] ? <span>{errors[name].message}</span> : null} */}
+            <label htmlFor={name}>{label}</label>
         </div>
     );
 };

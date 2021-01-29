@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import Input from "../../components/FormField/Input";
 import api from "../../services/api";
 import { login, setIdUser, setNameUser } from "../../services/auth";
-import userIMG from "../../assets/images/userLogin.png";
+import { ReactComponent as UserSVG } from "../../assets/images/user.svg";
 import { useHistory } from "react-router-dom";
 import "./style.css";
 
@@ -25,29 +25,27 @@ function App() {
     };
 
     return (
-        <>
-            <div className="login-box">
-                <img src={userIMG} alt="IMG_LOGIN" className="img-login" />
+        <div className="login-box">
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <UserSVG className="svgLogin" />
                 <h4 className="typography">Bem-Vindo</h4>
-                <form onSubmit={handleSubmit(onSubmit)}>
-                    <Input
-                        type="text"
-                        label="Email"
-                        name="email"
-                        placeholder="Email"
-                        register={register}
-                    />
-                    <Input
-                        type="password"
-                        label="Senha"
-                        name="password"
-                        placeholder="Senha"
-                        register={register}
-                    />
-                    <button>Entrar</button>
-                </form>
-            </div>
-        </>
+                <Input
+                    type="text"
+                    label="Email"
+                    name="email"
+                    placeholder=""
+                    register={register}
+                />
+                <Input
+                    type="password"
+                    label="Senha"
+                    name="password"
+                    placeholder=""
+                    register={register}
+                />
+                <button>Entrar</button>
+            </form>
+        </div>
     );
 }
 

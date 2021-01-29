@@ -1,10 +1,10 @@
-/* * {
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
     margin: 0px;
     padding: 0px;
-} */
-
-body {
-    background-color: #dcdcdc;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 .login-box {
@@ -12,34 +12,50 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 200px;
-    margin-left: 700px;
-    margin-right: 700px;
-    height: 400px;
-    padding: 20px;
-    background-color: #fffafa;
-}
-
-img {
-    width: 100px;
-    height: 100px;
-}
-
-.typography {
-    display: block;
+    height: 100vh;
+    background-color: #9aff9a77;
 }
 
 form {
-    align-self: stretch;
+    width: 500px;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+    background-color: white;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
-    padding: 20px;
+}
+
+.svgLogin {
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 2rem;
+}
+
+.typography {
+    font-size: x-large;
+    align-self: center;
+    margin-bottom: 3rem;
 }
 
 button {
+    align-self: stretch;
     margin-top: 20px;
-    padding: 5px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    border: solid 0px;
+    background-color: #2e8b57;
+}
+
+button:hover {
+    background-color: #00aa55;
+}
+
+button:active {
+    background-color: #2e8b57;
 }
