@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 48px;
+    background-color: #006633;
+}
+
+.cop-footer,
+.social-media,
+.link-media {
+    margin-top: 1rem;
+    color: #fafafa;
+}
+
+.social-media,
+.media-icon {
+    margin-right: 10px;
+}
+
+.media-icon {
+    height: 1.4rem;
+    width: 1.4rem;
+}
