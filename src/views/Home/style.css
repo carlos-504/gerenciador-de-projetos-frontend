@@ -1,3 +1,54 @@
 body {
     background-color: #dcdcdc;
 }
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img {
+    height: 39vh;
+    width: 300px;
+}
+
+.buttons {
+    margin-top: 60px;
+}
+
+.list-btn,
+.insert-btn {
+    width: 290px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+.list-btn {
+    background-color: #0e6ac5;
+}
+
+.list-btn:hover {
+    background-color: #0e6ac5d7;
+}
+
+.list-btn:active {
+    background-color: #075099;
+}
+
+.insert-btn {
+    background-color: #008b45;
+    margin-right: 20px;
+}
+
+.insert-btn:hover {
+    background-color: #008b45e1;
+}
+
+.insert-btn:active {
+    background-color: #026835;
+}
